@@ -1,0 +1,125 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+
+#particles-js {
+    margin: 0px;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sidenav {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #020410;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 20px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25pt;
+    color: #dbd5cc;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #5186a7;
+}
+
+#resume{
+    position: absolute;
+    top: 70%;
+    left: 42%;
+}   
+
+#projects{
+    position: absolute;
+    top: 70%;
+    left: 55%;
+}
+
+.nav-active{
+    color: #8caae7;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.headline{
+  color: white;
+  position: absolute;
+  left: 34%;
+  top: 25%;
+  font-size: 32px;
+  text-align: center;
+}
+.subtitle{
+    color: snow;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+}
+#computer-science{
+    height: 100%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper1.jpg'); */
+    background-size: cover;
+    background-position: center;
+    margin-left: 80px;
+    padding: 10px;  
+    padding-top: 30px;
+    font-size: 15pt;
+}
+#electronics{
+    height: 100%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper2.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+#down{
+    position: absolute;
+    bottom: 0%;
+    left: 52%;
+    font-size: 50pt;
+    color: rgba(172, 166, 166, 0.7);
+}
+#vertical_line{
+    width: 0.1px;
+    border: 1px solid grey;
+}

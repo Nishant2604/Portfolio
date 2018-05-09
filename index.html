@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nishant Nischaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
+    
+</head>
+<body>
+    <div class="sidenav">
+        <a href="#home">
+            <i class="fas fa-home nav-active"></i>
+        </a>
+        <a href="#codes">
+            <i class="fas fa-code"></i>
+        </a>
+        <a href="#electronics">
+            <i class="fas fa-microchip"></i>
+        </a>
+        <a href="#blog">
+            <i class="fab fa-medium-m"></i>
+        </a>
+        <a href="#github">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="#pictures">
+            <i class="fas fa-camera"></i>
+        </a>
+        <a href="#pictures">
+            <i class="fas fa-user"></i>
+        </a>
+    </div>
+
+    <div id="particles-js">
+        <div class="type-js headline">
+            <h1 class="text-js">Hi there, I am Nishant Nischaya!</h1>
+        </div>
+        <div class="subtitle">
+            <p style="text-align: center" class="animated fadeInUp">
+                <i class="fas fa-mobile"></i>
+                &nbsp;Mobile Application Developer <br> 
+                <i class="fas fa-laptop"></i>
+                FullStack Web Developer <br>
+                <i class="fas fa-microchip"></i>
+                Electronics Enthusiast</p>
+        </div>
+        <button type="button" class="btn btn-outline-light animated fadeInUp" id="resume">Download Resume</button>
+        <button type="button" class="btn btn-outline-light animated fadeInUp" id="projects">Discover Projects</button>
+       
+        <div id="down" class="animated slideInDown">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+    
+    <div id="computer-science">
+        <div class="container-fluid">
+            <h5><b>Familiar Technologies</b></h5>
+            <br>
+            <div class="row">
+                <div class="col-2">
+                    <i class="fab fa-html5"></i> &nbsp;HTML 5 <br>
+                    <i class="fab fa-css3-alt"></i> &nbsp;CSS 3 <br>
+                    <i class="fab fa-js-square"></i> &nbsp;JS <br>
+                    <i class="fab fa-node-js"></i> &nbsp;Node-JS <br>
+                    <i class="fab fa-angular"></i> &nbsp;Angular <br>
+                    <i class="fab fa-android"></i> &nbsp;Android <br>
+                    <i class="fab fa-java"></i> &nbsp;Java <br>
+                    <i class="fab fa-python"></i> &nbsp;Python
+                </div>
+                <div id="vertical_line"></div>
+                <div class="col-9">
+                    <div id="player"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="electronics">
+
+    </div>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>  
+    <script src="script.js"></script>
+    <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: 'M7lc1UVf-VE',
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        var done = false;
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 6000);
+                done = true;
+            }
+        }
+        function stopVideo() {
+            player.stopVideo();
+        }
+    </script>
+
+</body>
+</html>
