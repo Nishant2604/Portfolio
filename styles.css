@@ -7,6 +7,7 @@ body{
 #particles-js {
     margin: 0px;
     height: 100%;
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper.jpeg');
     background-size: cover;
     background-position: center;
@@ -15,6 +16,7 @@ body{
 }
 
 .sidenav {
+    display: inline-block;
     height: 100%;
     width: 80px;
     position: fixed;
@@ -54,11 +56,6 @@ body{
     color: #8caae7;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
 .text-js{
   opacity: 0;
 }
@@ -96,6 +93,9 @@ body{
     top: 40%;
     left: 46%;
 }
+.alternate-heading{
+    display: none;
+}
 #computer-science{
     height: 100%;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper1.jpg'); */
@@ -122,4 +122,11 @@ body{
 #vertical_line{
     width: 0.1px;
     border: 1px solid grey;
+}
+#toggler{
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    font-size: 20pt;
+    color: grey;
 }
