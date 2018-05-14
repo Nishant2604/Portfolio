@@ -35,6 +35,9 @@
     #toggler:hover{
         cursor: pointer;
     }
+    #toggler{
+        display: inline;
+    }
 }
 
 @media only screen and (max-width: 400px) {
