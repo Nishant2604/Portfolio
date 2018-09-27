@@ -17,6 +17,7 @@ body{
 
 .sidenav {
     display: inline-block;
+    z-index: 1200;
     height: 100%;
     width: 80px;
     position: fixed;
@@ -37,7 +38,7 @@ body{
 }
 
 .sidenav a:hover {
-    color: #5186a7;
+    color: #22ced4;
 }
 
 #resume{
@@ -97,20 +98,28 @@ body{
     display: none;
 }
 #android{
-    height: 100%;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper1.jpg'); */
     background-size: cover;
     background-position: center;
-    margin-left: 80px;
     padding: 10px;  
     padding-top: 30px;
     font-size: 15pt;
 }
 #electronics{
-    height: 100%;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper2.jpg'); */
     background-size: cover;
     background-position: center;
+    padding: 10px;  
+    padding-top: 30px;
+    font-size: 15pt;
+}
+#webdev{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper2.jpg'); */
+    background-size: cover;
+    background-position: center;
+    padding: 10px;  
+    padding-top: 30px;
+    font-size: 15pt;
 }
 #down{
     position: absolute;
@@ -122,6 +131,7 @@ body{
 #toggler{
     position: fixed;
     display: none;
+    z-index: 1000;
     top: 20px;
     left: 30px;
     font-size: 20pt;
@@ -131,5 +141,15 @@ body{
     font-size: 30pt;
     color: rgba(9, 5, 44, 0.7);
 }
-.grid-item { width: 25%; }
-.grid-item--width2 { width: 50%; }
+
+#more1{
+    display: none;
+}
+
+#more2{
+    display: none;
+}
+
+#more3{
+    display: none;
+}
