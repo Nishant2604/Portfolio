@@ -43,7 +43,7 @@ body{
 #resume{
     position: absolute;
     top: 70%;
-    left: 42%;
+    left: 40%;
 }   
 
 #projects{
@@ -82,16 +82,16 @@ body{
 .headline{
   color: white;
   position: absolute;
-  left: 34%;
+  left: 32%;
   top: 25%;
-  font-size: 32px;
+  font-size: 33px;
   text-align: center;
 }
 .subtitle{
     color: snow;
     position: absolute;
     top: 40%;
-    left: 46%;
+    left: 45%;
 }
 .alternate-heading{
     display: none;
