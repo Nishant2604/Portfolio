@@ -96,7 +96,7 @@ body{
 .alternate-heading{
     display: none;
 }
-#computer-science{
+#android{
     height: 100%;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper1.jpg'); */
     background-size: cover;
@@ -119,10 +119,6 @@ body{
     font-size: 50pt;
     color: rgba(172, 166, 166, 0.7);
 }
-#vertical_line{
-    width: 0.1px;
-    border: 1px solid grey;
-}
 #toggler{
     position: fixed;
     display: none;
@@ -131,3 +127,9 @@ body{
     font-size: 20pt;
     color: grey;
 }
+#sectionTitle{
+    font-size: 30pt;
+    color: rgba(9, 5, 44, 0.7);
+}
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }

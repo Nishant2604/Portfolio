@@ -30,6 +30,7 @@ $(document).ready(function () {
     // class of outer div
     // The second paramter is the speed between each letter is typed.   
     autoType(".type-js", 200);
+    
     $('#toggler').click(function(){
         $('.sidenav').css("display","inline-block"); 
         $('div:not(.sidebar, .animate, .slideInLeft)').click(function () {
@@ -40,5 +41,10 @@ $(document).ready(function () {
         })
     })
 
+    $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    });
 });
  
