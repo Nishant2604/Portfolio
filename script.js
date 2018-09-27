@@ -32,6 +32,13 @@ $(document).ready(function () {
     autoType(".type-js", 200);
     $('#toggler').click(function(){
         $('.sidenav').css("display","inline-block"); 
+        $('div:not(.sidebar, .animate, .slideInLeft)').click(function () {
+            $('.sidenav').css("display", "none");
+        })
+        $('#toggler').click(function () {
+            $('.sidenav').css("display", "inline-block"); 
+        })
     })
+
 });
  
