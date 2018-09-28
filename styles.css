@@ -121,6 +121,14 @@ body{
     padding-top: 30px;
     font-size: 15pt;
 }
+#blog{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper2.jpg'); */
+    background-size: cover;
+    background-position: center;
+    padding: 30vh;  
+    padding-top: 30px;
+    font-size: 15pt;
+}
 #down{
     position: absolute;
     bottom: 0%;
