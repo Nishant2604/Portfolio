@@ -25,7 +25,6 @@ body{
     top: 0;
     left: 0;
     background-color: #020410;
-    overflow-x: hidden;
     padding-top: 20px;
 }
 
@@ -51,10 +50,6 @@ body{
     position: absolute;
     top: 70%;
     left: 55%;
-}
-
-.nav-active{
-    color: #8caae7;
 }
 
 .text-js{
@@ -98,7 +93,6 @@ body{
     display: none;
 }
 #android{
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper1.jpg'); */
     background-size: cover;
     background-position: center;
     padding: 10px;  
@@ -148,6 +142,13 @@ body{
 #sectionTitle{
     font-size: 30pt;
     color: rgba(9, 5, 44, 0.7);
+}
+#androidContainer{
+    background-image: url('wallpaper1.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    width: 100vw;
 }
 
 #more1{
