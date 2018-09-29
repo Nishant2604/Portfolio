@@ -144,11 +144,14 @@ body{
     color: rgba(9, 5, 44, 0.7);
 }
 #androidContainer{
-    background-image: url('wallpaper1.png');
+    /* background-image: url('wallpaper1.png'); */
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #252932, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #252932, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100vw;
     background-repeat: no-repeat;
     background-clip: content-box;
-    width: 100vw;
+    width: 98vw;
 }
 
 #more1{
@@ -161,4 +164,10 @@ body{
 
 #more3{
     display: none;
+}
+
+#logo{
+    margin-top: 25px;
+    padding: 10px;
+    margin-left: 10px;
 }
