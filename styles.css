@@ -1,12 +1,14 @@
 body{
     padding: 0px;
     margin: 0px;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #particles-js {
     margin: 0px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('wallpaper.jpeg');
     background-size: cover;
@@ -153,6 +155,9 @@ body{
     background-clip: content-box;
     width: 98vw;
 }
+#phone{
+    height: 100%;
+}
 
 #more1{
     display: none;
@@ -167,7 +172,10 @@ body{
 }
 
 #logo{
-    margin-top: 25px;
     padding: 10px;
     margin-left: 10px;
+}
+
+#desc{
+    font-size: 20pt;
 }

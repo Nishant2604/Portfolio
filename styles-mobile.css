@@ -2,6 +2,15 @@
     #phone{
         display: none;
     }
+    #findapk{
+        text-align: center
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #desc{
+        font-size: 12pt;
+    }
 }
 
 @media only screen and (max-width: 700px) {
