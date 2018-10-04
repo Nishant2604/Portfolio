@@ -1,7 +1,4 @@
 @media only screen and (max-width: 800px) {
-    #phone{
-        display: none;
-    }
     #findapk{
         text-align: center
     }
@@ -14,6 +11,9 @@
 }
 
 @media only screen and (max-width: 700px) {
+    #phone{
+        margin-left: 0;
+    }
     .sidenav {
         display: none;
     }
